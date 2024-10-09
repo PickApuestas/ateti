@@ -17,6 +17,7 @@
             height: 100vh;
             margin: 0;
             overflow: hidden; /* Evita barras de desplazamiento */
+            text-align: center; /* Centrar el texto */
         }
 
         h1 {
@@ -72,6 +73,39 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem; /* Tamaño más pequeño en móviles */
+            }
+            p {
+                font-size: 1.2rem; /* Tamaño más pequeño en móviles */
+            }
+            .corazon {
+                font-size: 4rem; /* Tamaño más pequeño en móviles */
+            }
+            .btn {
+                font-size: 1.2rem; /* Tamaño más pequeño en móviles */
+                padding: 10px 20px; /* Ajustar padding en móviles */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem; /* Tamaño más pequeño en pantallas muy pequeñas */
+            }
+            p {
+                font-size: 1rem; /* Tamaño más pequeño en pantallas muy pequeñas */
+            }
+            .corazon {
+                font-size: 3rem; /* Tamaño más pequeño en pantallas muy pequeñas */
+            }
+            .btn {
+                font-size: 1rem; /* Tamaño más pequeño en pantallas muy pequeñas */
+                padding: 8px 15px; /* Ajustar padding en pantallas muy pequeñas */
+            }
+        }
     </style>
 </head>
 <body>
@@ -85,3 +119,4 @@
     </script>
 </body>
 </html>
+
